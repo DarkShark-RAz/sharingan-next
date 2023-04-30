@@ -1,8 +1,9 @@
 import Loader from '@/components/Loader';
+import { useState } from 'react';
 
 export default function Home() {
   return (
-    <main>
+    <main className="h-screen w-screen">
       <Loader />
     </main>
   );

@@ -34,11 +34,13 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
 .sharingan-container {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
+  height: 100%;
   flex-flow: row wrap;
 }
 
@@ -113,25 +115,25 @@ body {
   );
 }
 
-.eye:hover {
+/* .eye:hover {
   z-index: 1;
   box-shadow: 0 0 100px rgb(201, 13, 13);
   animation: scale 0.3s ease-in-out, glow 0.5s ease-in-out;
   transform: scale(1.1);
   opacity: 1;
   mix-blend-mode: lighten;
-}
+} */
 
-.eye:hover .inner-eye {
+/* .eye:hover .inner-eye {
   animation: rotation 2.5s ease-in-out 0.8s;
-}
+} */
 
 .eye-and-reflection-container {
   height: 300px;
   transition: all 0.3s ease-in-out;
 }
 
-.eye-and-reflection-container:hover {
+/* .eye-and-reflection-container:hover {
   height: 400px;
   padding: 40px;
   -webkit-box-reflect: below -365px -webkit-gradient(
@@ -141,7 +143,7 @@ body {
       from(transparent),
       to(rgba(255, 255, 255, 0.5))
     );
-}
+} */
 
 .eye > .inner-eye {
   position: absolute;
@@ -384,10 +386,10 @@ body {
   );
 }
 
-.hagoromo-eye:hover {
+/* .hagoromo-eye:hover {
   box-shadow: 0 0 100px rgba(122, 83, 156, 1);
   animation: hagoromo-glow 0.5s ease-in-out;
-}
+} */
 
 .hagoromo-eye::after {
   width: 20px;
@@ -436,9 +438,9 @@ body {
 /* HAGOROMO EYES END */
 /*  SASUKE RINNEGAN */
 
-.s-rgn:hover .tag-circle {
+/* .s-rgn:hover .tag-circle {
   animation: reverse-rotation 2.5s ease-in-out 0.8s reverse;
-}
+} */
 
 .s-rgn > .inner-eye > div > .tag-container {
   width: 100%;
@@ -477,3 +479,54 @@ body {
   }
 }
 /* SASUKE RINNEGAN END */
+
+.eye-box {
+  background-color: #fff;
+  width: 350px;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  padding-top: 10px;
+  margin: auto 40px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100% 0 54% 46% / 93% 1% 99% 7%;
+  box-shadow: -4px 21px 1px 6px var(--eye-shadow) inset;
+  animation: eye_animation 16s ease-in-out infinite;
+  transition: height 0.5s ease-in-out, padding-top 0.5s ease-in-out;
+}
+
+.left-eye {
+  transform: scaleX(-1);
+}
+
+.eye-box.eye {
+  position: absolute;
+  top: 5%;
+  right: 10%;
+}
+
+.box {
+  overflow: hidden;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px auto;
+}
+
+@keyframes eye_animation {
+  0%,
+  36%,
+  55%,
+  100% {
+    height: 200px;
+    padding-top: 20px;
+  }
+  43%,
+  47% {
+    height: 0;
+    padding: 0;
+  }
+}
