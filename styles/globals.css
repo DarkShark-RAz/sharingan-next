@@ -507,14 +507,14 @@ body {
   right: 10%;
 }
 
-.box {
+/* .box {
   overflow: hidden;
   height: 250px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 40px auto;
-}
+} */
 
 @keyframes eye_animation {
   0%,

@@ -37,7 +37,6 @@ function Eye() {
   return (
     <div className="flex items-center justify-center">
       <div className="sharingan-container">
-        {/* <div className="eye-and-reflection-container"> */}
         <div className="eye-container">
           <div ref={ref} className={`eye circle ${first}`}>
             <div className="glare circle"></div>
@@ -101,7 +100,6 @@ function Eye() {
             )}
           </div>
         </div>
-        {/* </div> */}
       </div>
     </div>
   );
