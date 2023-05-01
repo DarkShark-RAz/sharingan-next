@@ -1,5 +1,4 @@
 import Loader from '@/components/Loader';
-import { useState } from 'react';
 
 export default function Home() {
   return (

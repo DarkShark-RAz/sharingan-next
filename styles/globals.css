@@ -493,7 +493,7 @@ body {
   align-items: center;
   border-radius: 100% 0 54% 46% / 93% 1% 99% 7%;
   box-shadow: -4px 21px 1px 6px var(--eye-shadow) inset;
-  animation: eye_animation 16s ease-in-out infinite;
+  animation: eye_animation 11s ease-in-out infinite;
   transition: height 0.5s ease-in-out, padding-top 0.5s ease-in-out;
 }
 

@@ -25,7 +25,10 @@ function Eye() {
         setSecond(false);
         setFirst('hagoromo-eye s-rgn');
       } else if (7 === loopRef.current) {
-        return false;
+        // return false;
+        setSecond(true);
+        setFirst('level1');
+        loopRef.current = 0;
       }
       return true;
     },
