@@ -35,7 +35,7 @@ function Eye() {
   }));
 
   return (
-    <div className="flex items-center justify-center">
+    <div className="flex items-center justify-center scale-100">
       <div className="sharingan-container">
         <div className="eye-container">
           <div ref={ref} className={`eye circle ${first}`}>

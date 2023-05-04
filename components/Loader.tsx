@@ -5,12 +5,12 @@ type Props = {};
 
 function Loader({}: Props) {
   return (
-    <div className="h-screen w-screen">
-      <div className="box flex flex-row justify-between h-full mx-auto my-auto overflow-hidden max-w-4xl scale-50">
-        <div className="eye-box left-eye ">
+    <div className="h-screen w-screen flex justify-center">
+      <div className="grid grid-flow-row grid-cols-2 place-items-center">
+        <div className="eye-box -scale-x-[0.4] scale-y-[0.4] md:-scale-x-[0.6] md:scale-y-[0.6] col-span-1">
           <Eye />
         </div>
-        <div className="eye-box">
+        <div className="eye-box scale-[0.4] md:scale-[0.6] col-span-1">
           <Eye />
         </div>
       </div>
